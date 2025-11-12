@@ -90,7 +90,7 @@ REGION_TOP_LEFT = (190, 4)
 REGION_BOTTOM_RIGHT = (634, 473)
 
 # Video source
-cap = cv2.VideoCapture("5.mp4")  # Change to 0 for webcam
+cap = cv2.VideoCapture("video.mp4")  # Change to 0 for webcam
 ```
 
 ### Exit:
