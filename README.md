@@ -104,8 +104,6 @@ Press **'q'** to quit the application.
 
 **[Demo.mp4](./Demo.mp4)** - See real-time vehicle detection, tripwire crossing, and automatic barrier status control
 
-🎥 [Watch Demo](https://github.com/fzkn1998/Automated-Lane-Barrier-Control-System/releases/download/v1.0/Demo.mp4)
-
 ### What to Look For in the Demo:
 - 🟢 **Green Bounding Boxes** - Vehicle detected outside barrier zone (Status: 0 - OPEN)
 - 🔴 **Red Bounding Boxes** - Vehicle detected inside barrier zone (Status: 1 - CLOSED)
