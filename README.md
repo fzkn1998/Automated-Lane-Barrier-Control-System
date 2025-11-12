@@ -202,7 +202,7 @@ Created with ❤️ for automated traffic management solutions.
 For issues, questions, or contributions:
 - Open an issue on GitHub
 - Submit a pull request
-- Contact: [your-email@example.com]
+- Contact: fzkn1998@gmail.com
 
 ---
 
