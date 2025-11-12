@@ -1,22 +1,26 @@
-# Lane Barrier Detection System 🚗
+# Automated Lane Barrier Control System �
 
-An intelligent **computer vision-based lane barrier control system** that automatically detects vehicles (trucks) using YOLOv8 and controls the opening/closing of lane barriers without requiring any physical sensors.
+An intelligent **computer vision-based automated barrier control system** that detects vehicle movement across a designated lane using YOLOv8 and automatically controls the opening/closing of lane barriers without requiring any physical sensors.
 
 ## 🎯 Overview
 
-This project leverages **real-time object detection** and **tracking** to monitor vehicle movement across a designated lane. When a vehicle is detected crossing a virtual tripwire line, the system determines if the vehicle is within the barrier zone and automatically signals the barrier status:
+This project is designed to **automatically control lane/road barriers** by monitoring vehicle movement through computer vision. When a vehicle is detected crossing a virtual tripwire line, the system determines if the vehicle is within the barrier zone and sends a control signal to:
 
-- **RED (Status = 1)**: Vehicle inside the barrier zone → **Barrier CLOSED**
-- **GREEN (Status = 0)**: Vehicle outside the barrier zone → **Barrier OPEN**
+- **CLOSE the barrier** (Status = 1): When vehicle is detected inside the barrier zone → **BARRIER CLOSED 🔴**
+- **OPEN the barrier** (Status = 0): When vehicle moves out of the barrier zone → **BARRIER OPEN 🟢**
+
+This eliminates the need for physical sensors (IR sensors, pressure plates, etc.) by using AI-powered computer vision instead!
 
 ## 🚀 Key Features
 
-✅ **Real-time Vehicle Detection** - Uses YOLOv8 for accurate truck/vehicle detection  
+✅ **Automatic Barrier Control** - Opens/closes lane barriers without human intervention  
+✅ **Real-time Vehicle Detection** - Uses YOLOv8 for accurate vehicle detection  
 ✅ **Intelligent Tracking** - Maintains persistent object tracking across frames  
-✅ **Virtual Tripwire** - Detects when vehicles cross a defined detection line  
-✅ **Zone Detection** - Monitors vehicle presence within the barrier zone  
-✅ **No Physical Sensors** - Purely computer vision-based solution  
-✅ **Live Visualization** - Real-time video feed with detection boxes and status indicators  
+✅ **Virtual Tripwire** - Detects when vehicles cross a defined barrier detection line  
+✅ **Zone Monitoring** - Monitors vehicle presence within the barrier zone  
+✅ **No Physical Sensors** - Purely computer vision-based (no IR/pressure sensors needed)  
+✅ **Live Visualization** - Real-time video feed with detection boxes and barrier status  
+✅ **Easy Integration** - Status output can connect to barrier motor control systems  
 
 ## 📋 System Logic
 
@@ -140,11 +144,12 @@ Available YOLOv8 models:
 
 ```
 Lane_Barrier/
-├── Cam1_Lane_Barrier.py      # Main script
-├── yolov8m.pt               # Pre-trained YOLOv8 model
+├── Cam1_Lane_Barrier.py      # Main barrier control script
+├── yolov8m.pt               # Pre-trained YOLOv8 vehicle detection model
 ├── requirements.txt         # Python dependencies
 ├── README.md               # Project documentation
-└── 5.mp4                   # Sample video (or use webcam with index 0)
+├── Demo.mp4                # Demo video showing barrier control in action
+└── video.mp4               # Input video file (or use webcam with index 0)
 ```
 
 ## 🎓 How It Works
