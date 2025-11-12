@@ -193,10 +193,6 @@ Checks if the vehicle's center point (cx, cy) lies within the rectangular barrie
 
 MIT License - Feel free to use and modify for your projects.
 
-## 👨‍💻 Author
-
-Created with ❤️ for automated traffic management solutions.
-
 ## 📞 Support
 
 For issues, questions, or contributions:
