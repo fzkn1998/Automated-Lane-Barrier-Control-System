@@ -6,8 +6,8 @@ An intelligent **computer vision-based automated barrier control system** that d
 
 This project is designed to **automatically control lane/road barriers** by monitoring vehicle movement through computer vision. When a vehicle is detected crossing a virtual tripwire line, the system determines if the vehicle is within the barrier zone and sends a control signal to:
 
-- **CLOSE the barrier** (Status = 1): When vehicle is detected inside the barrier zone → **BARRIER CLOSED 🔴**
-- **OPEN the barrier** (Status = 0): When vehicle moves out of the barrier zone → **BARRIER OPEN 🟢**
+- **OPEN the barrier** (Status = 1): When vehicle is detected inside the barrier zone → **BARRIER OPEN🔴**
+- **CLOSED the barrier** (Status = 0): When vehicle moves out of the barrier zone → **BARRIER CLOSED 🟢**
 
 This eliminates the need for physical sensors (IR sensors, pressure plates, etc.) by using AI-powered computer vision instead!
 
