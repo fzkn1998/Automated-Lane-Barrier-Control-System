@@ -105,8 +105,8 @@ Press **'q'** to quit the application.
 **[Demo.mp4](./Demo.mp4)** - See real-time vehicle detection, tripwire crossing, and automatic barrier status control
 
 ### What to Look For in the Demo:
-- 🟢 **Green Bounding Boxes** - Vehicle detected outside barrier zone (Status: 0 - OPEN)
-- 🔴 **Red Bounding Boxes** - Vehicle detected inside barrier zone (Status: 1 - CLOSED)
+- 🟢 **Green Bounding Boxes** - Vehicle detected outside barrier zone (Status: 1 - OPEN)
+- 🔴 **Red Bounding Boxes** - Vehicle detected inside barrier zone (Status: 0 - CLOSED)
 - 🟣 **Purple Line** - Virtual tripwire crossing detection line
 - 🟡 **Yellow Rectangle** - Barrier monitoring zone
 - 📊 **Status Display** - "Lane Barrier: 0" or "Lane Barrier: 1" shown in top-left
@@ -116,7 +116,7 @@ Press **'q'** to quit the application.
 The system displays:
 - **Bounding boxes** around detected vehicles
 - **Tracking IDs** for each vehicle
-- **Barrier status**: "Lane Barrier: 0" (OPEN) or "Lane Barrier: 1" (CLOSED)
+- **Barrier status**: "Lane Barrier: 1" (OPEN) or "Lane Barrier: 0" (CLOSED)
 - **Color-coded indicators**:
   - 🟢 **Green**: Vehicle outside zone (OPEN)
   - 🔴 **Red**: Vehicle inside zone (CLOSED)
